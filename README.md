@@ -41,7 +41,7 @@ Finally, we compare all three methods in a single plot.
 
 ![AE vs. LoRA vs. Baseline](img/low_rank_weights_accuracy_comparison_full.png)
 
-Overall, we observe that <u>for this simple MNIST test case </u> it is beneficial to use low-rank representations of the matrices directly, as long as the weight matrices are initialized appropriately. It remains an open question whether this observation can be also made for more difficult problems.
+Overall, we observe that <u>for this simple FashionMNIST test case </u> it is beneficial to use low-rank representations of the matrices directly, as long as the weight matrices are initialized appropriately. It remains an open question whether this observation can be also made for more difficult problems.
 
 ## Extensions to LoRA
 There has been a lot of other research LoRA. Some related papers include:
