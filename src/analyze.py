@@ -56,6 +56,7 @@ if __name__ == "__main__":
     ae_names = [model_name for model_name in results if "ae" in model_name]
     ae_names.sort(key=lambda x: int(x.split("(")[1].split(")")[0])) # sort the model names by rank   
     for i, model_name in enumerate(ae_names[2:]):
+        rank = int(model_name.split("(")[1].split(")")[0])
         # make a dashed line plot
         plt.plot(results[model_name]["accuracies"], label=model_name, color=colors[i], linestyle='dashed')
         print(f"MLP+AE(rank={rank}):   {results[model_name]['num_parameters']:,} parameters")
